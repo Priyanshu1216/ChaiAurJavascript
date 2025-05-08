@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating new element in DOM</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+  const div = document.createElement('div')
+  div.className = "main"
+  div.id = Math.round((Math.random() * 10) + 1)
+  div.innerHTML = `
+  <h1>DOM learning</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum ipsam neque temporibus laborum.
+    Dolorem quia est earum nulla animi corporis commodi, provident magnam, accusantium nostrum, similique fugit
+    officiis non?</p>
+  `
+  document.body.appendChild(div)
+</script>
+
+</html>
+
+<div>
+  
+</div>
