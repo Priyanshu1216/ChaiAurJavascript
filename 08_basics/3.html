@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>
+    Learning Asynchronous Behaviour of JS
+  </h1>
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+</body>
+
+<script>
+  let hitMe; // declare it outside so both event listeners can access it
+
+  document.querySelector('#start').addEventListener('click', () => {
+    if (!hitMe) { // if it's not already running
+      hitMe = setInterval(() => {
+        console.log("Hi", Date.now());
+      }, 1000);
+    }
+  });
+
+  document.querySelector('#stop').addEventListener('click', () => {
+    clearInterval(hitMe);
+    hitMe = null; // reset it to allow starting again
+  });
+</script>
+
+</html>

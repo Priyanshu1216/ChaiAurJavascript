@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>
+    Learning Aynchronous behaviour of JS
+  </h1>
+  <button id="stop">Stop</button>
+</body>
+
+<script>
+  setTimeout(() => {
+    // console.log("Rashu");
+    document.querySelector('h1').innerHTML = "Changed text through setTimeOut"
+  }, 2000)
+</script>
+
+</html>
+
+
+```
+setTimeout works for only once with given time, for example, i have given 2000 miliseconds to this function it means it
+will execute only once after 2 sec.
+
+
+
+but setInterval works differntly than this, this funciton keeps executing itself for given period of time.
+
+```
