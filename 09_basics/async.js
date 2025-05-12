@@ -1,6 +1,6 @@
-## Javascript
+Javascript
 
-  ```
+  ``` Javascript
 --> Synchronous
 --> Single threaded
 
@@ -27,7 +27,6 @@ Non - Blocking Code
 
 Does not block the flow of the program
 (read file async)
-
 
 ```
 

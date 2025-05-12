@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Closure</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+  // Lexical scoping
+
+  function init() {
+    let name = "Google";
+    function displayName() {
+      console.log(name);
+    }
+    displayName();
+  }
+
+  init();
+
+
+  // Closure
+
+  function init() {
+    let name = "safari";
+    function displayName() {
+      console.log(name);
+    }
+    return displayName;
+  }
+</script>
+
+</html>
+
+
+<!-- Above is example of lexical scoping -->
+
+<!-- it means, child functions can access parent functions but it is not available outside of it's scope -->
